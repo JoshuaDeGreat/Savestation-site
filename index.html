@@ -4,193 +4,424 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SaveStation — HXSE Toolkit (Free X4 Save Editor)</title>
-  <meta name="description" content="SaveStation hosts download links and docs for HXSE Toolkit (Hillybilly’s X4 Save Editor Command ToolKit). Free, offline X4 save editing with recipes and example saves." />
+  <meta name="description" content="SaveStation hosts the HXSE Toolkit download, quick start, safety notes, and SaveStation example saves for X4 Foundations." />
+  <meta name="theme-color" content="#0b1020" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="#top">SaveStation</a>
-      <nav class="nav">
-        <a href="#download">Download</a>
-        <a href="#quickstart">Quick Start</a>
-        <a href="#features">Features</a>
-        <a href="#trust">Safety</a>
-        <a href="#faq">FAQ</a>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="SaveStation home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">SaveStation</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#download" data-section="download">Download</a>
+        <a class="nav__link" href="#quickstart" data-section="quickstart">Quick Start</a>
+        <a class="nav__link" href="#features" data-section="features">Features</a>
+        <a class="nav__link" href="#savestation" data-section="savestation">SaveStation</a>
+        <a class="nav__link" href="#trust" data-section="trust">Safety</a>
+        <a class="nav__link" href="#faq" data-section="faq">FAQ</a>
       </nav>
+
+      <div class="header__cta">
+        <!-- TODO: replace with your real link -->
+        <a class="btn btn--primary" href="https://example.com/download" target="_blank" rel="noreferrer">
+          Download
+        </a>
+      </div>
+
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile" hidden>
+      <div class="container mobile__inner">
+        <a href="#download" class="mobile__link">Download</a>
+        <a href="#quickstart" class="mobile__link">Quick Start</a>
+        <a href="#features" class="mobile__link">Features</a>
+        <a href="#savestation" class="mobile__link">SaveStation</a>
+        <a href="#trust" class="mobile__link">Safety</a>
+        <a href="#faq" class="mobile__link">FAQ</a>
+      </div>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
+    <!-- HERO -->
     <section class="hero">
-      <div class="wrap">
-        <p class="kicker">X4 Foundations • Free Tool</p>
-        <h1>HXSE Toolkit</h1>
-        <p class="subhead">
-          Hillybilly’s X4 Save Editor Command ToolKit — a desktop editor for X4 save files.
-          Download example saves from SaveStation, then make your own in minutes.
-        </p>
-
-        <div class="cta">
-          <!-- TODO: replace with your real links -->
-          <a class="btn primary" href="https://example.com/download" target="_blank" rel="noreferrer">Download HXSE Toolkit</a>
-          <a class="btn" href="#quickstart">Quick Start</a>
-        </div>
-
-        <div class="meta">
-          <span class="pill">Offline desktop app</span>
-          <span class="pill">X4-only (for now)</span>
-          <span class="pill">Supports .xml and .xml.gz</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="download" class="section">
-      <div class="wrap">
-        <h2>Download</h2>
-        <div class="card grid2">
-          <div>
-            <h3>Latest release</h3>
-            <ul class="clean">
-              <li><strong>Version:</strong> vX.XX (replace)</li>
-              <li><strong>Platform:</strong> Windows / Linux / Mac (edit to match)</li>
-              <li><strong>File:</strong> hxse-toolkit.zip (edit)</li>
-            </ul>
-
-            <div class="cta">
-              <a class="btn primary" href="https://example.com/download" target="_blank" rel="noreferrer">Download</a>
-              <a class="btn" href="https://example.com/changelog" target="_blank" rel="noreferrer">Changelog</a>
-            </div>
-
-            <p class="small">
-              Recommended: always back up your saves before editing.
-            </p>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">
+            <span class="dot" aria-hidden="true"></span>
+            X4 Foundations • Free Tool • Command Toolkit
           </div>
 
-          <div>
-            <h3>Verify (optional but smart)</h3>
-            <p class="small">Post a checksum so people trust the file.</p>
-            <div class="codebox">
-              <code>
-SHA256: REPLACE_WITH_REAL_HASH
-              </code>
-            </div>
+          <h1>
+            HXSE Toolkit
+            <span class="h1-sub">Hillybilly’s X4 Save Editor Command ToolKit</span>
+          </h1>
 
-            <h3 style="margin-top:16px;">Mirrors</h3>
-            <ul class="clean">
-              <li><a href="https://example.com/github" target="_blank" rel="noreferrer">GitHub Releases</a></li>
-              <li><a href="https://example.com/nexus" target="_blank" rel="noreferrer">Nexus (optional)</a></li>
-              <li><a href="https://example.com/drive" target="_blank" rel="noreferrer">Drive mirror (optional)</a></li>
-            </ul>
+          <p class="lead">
+            Download tested example saves from <strong>SaveStation</strong>, then create your own custom starts
+            and tweaks with <strong>HXSE Toolkit</strong>.
+          </p>
+
+          <div class="hero__actions">
+            <!-- TODO: replace links -->
+            <a class="btn btn--primary" href="https://example.com/download" target="_blank" rel="noreferrer">
+              Download HXSE Toolkit
+            </a>
+            <a class="btn btn--ghost" href="#quickstart">Quick Start</a>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="quickstart" class="section">
-      <div class="wrap">
-        <h2>Quick Start</h2>
-        <div class="card">
-          <ol class="steps">
-            <li><strong>Back up your save</strong> (keep an untouched copy somewhere safe).</li>
-            <li><strong>Import your save</strong> (.xml or .xml.gz).</li>
-            <li><strong>Queue edits</strong>, review changes, then <strong>Export</strong> to a new file.</li>
-          </ol>
-          <p class="small">
-            Tip: Edits are queued in memory and only written when you export. :contentReference[oaicite:0]{index=0}
+          <div class="hero__meta">
+            <div class="stat">
+              <div class="stat__label">Price</div>
+              <div class="stat__value">Free</div>
+            </div>
+            <div class="stat">
+              <div class="stat__label">Scope</div>
+              <div class="stat__value">X4 only</div>
+            </div>
+            <div class="stat">
+              <div class="stat__label">Workflow</div>
+              <div class="stat__value">Queue → Export</div>
+            </div>
+          </div>
+
+          <p class="micro">
+            Not affiliated with Egosoft. Always back up saves before editing.
           </p>
         </div>
 
-        <div class="grid2" style="margin-top:16px;">
+        <div class="hero__panel">
+          <div class="panel">
+            <div class="panel__top">
+              <div>
+                <div class="panel__title">Latest Release</div>
+                <div class="panel__sub">Keep this accurate. It builds trust.</div>
+              </div>
+              <span class="badge badge--teal">Stable</span>
+            </div>
+
+            <div class="release">
+              <div class="release__row">
+                <span>Version</span>
+                <strong id="relVersion">vX.XX</strong>
+              </div>
+              <div class="release__row">
+                <span>Release date</span>
+                <strong id="relDate">YYYY-MM-DD</strong>
+              </div>
+              <div class="release__row">
+                <span>Download</span>
+                <a class="link" id="relLink" href="https://example.com/download" target="_blank" rel="noreferrer">
+                  hxse-toolkit.zip
+                </a>
+              </div>
+            </div>
+
+            <div class="panel__actions">
+              <a class="btn btn--primary btn--full" href="https://example.com/download" target="_blank" rel="noreferrer">
+                Download
+              </a>
+              <div class="panel__split">
+                <a class="btn btn--ghost btn--full" href="https://example.com/changelog" target="_blank" rel="noreferrer">
+                  Changelog
+                </a>
+                <a class="btn btn--ghost btn--full" href="https://example.com/docs" target="_blank" rel="noreferrer">
+                  Docs
+                </a>
+              </div>
+            </div>
+
+            <div class="code">
+              <div class="code__label">SHA256 (optional, recommended)</div>
+              <pre><code id="relSha">REPLACE_WITH_REAL_HASH</code></pre>
+            </div>
+
+            <div class="hint">
+              Pro tip: post a checksum + mirrors. People trust you instantly.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="section" id="download">
+      <div class="container">
+        <div class="section__head">
+          <h2>Download</h2>
+          <p>One button. No confusion. Mirrors and verification below.</p>
+        </div>
+
+        <div class="grid grid--2">
           <div class="card">
-            <h3>What it does</h3>
-            <ul class="clean">
-              <li>Imports <code>.xml</code> and <code>.xml.gz</code> saves :contentReference[oaicite:1]{index=1}</li>
-              <li>Queues multiple edits across tabs :contentReference[oaicite:2]{index=2}</li>
-              <li>Exports a patched save (plain <code>.xml</code>), optional backup :contentReference[oaicite:3]{index=3}</li>
+            <h3>HXSE Toolkit</h3>
+            <p class="muted">
+              Primary download (recommended). Keep the filename stable if you can.
+            </p>
+            <div class="actions">
+              <!-- TODO -->
+              <a class="btn btn--primary" href="https://example.com/download" target="_blank" rel="noreferrer">Download</a>
+              <a class="btn btn--ghost" href="https://example.com/changelog" target="_blank" rel="noreferrer">Changelog</a>
+            </div>
+
+            <div class="list">
+              <div class="list__row"><span>Supports</span><strong>.xml / .xml.gz</strong></div>
+              <div class="list__row"><span>Export</span><strong>.xml</strong></div>
+              <div class="list__row"><span>Recommended</span><strong>Back up originals</strong></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Mirrors & verification</h3>
+            <p class="muted">
+              Add mirrors so downloads never go down. Add hashes so people don’t panic.
+            </p>
+
+            <div class="list">
+              <!-- TODO -->
+              <div class="list__row">
+                <span>GitHub Releases</span>
+                <a class="link" href="https://example.com/github" target="_blank" rel="noreferrer">Open</a>
+              </div>
+              <div class="list__row">
+                <span>Nexus (optional)</span>
+                <a class="link" href="https://example.com/nexus" target="_blank" rel="noreferrer">Open</a>
+              </div>
+              <div class="list__row">
+                <span>Drive mirror (optional)</span>
+                <a class="link" href="https://example.com/drive" target="_blank" rel="noreferrer">Open</a>
+              </div>
+            </div>
+
+            <div class="code" style="margin-top:14px;">
+              <div class="code__label">SHA256</div>
+              <pre><code>REPLACE_WITH_REAL_HASH</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICKSTART -->
+    <section class="section" id="quickstart">
+      <div class="container">
+        <div class="section__head">
+          <h2>Quick Start</h2>
+          <p>Designed for zero drama: backup, edit, export, play.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card card--step">
+            <div class="stepnum">01</div>
+            <h3>Back up</h3>
+            <p class="muted">Copy your save somewhere safe before editing. Always.</p>
+          </div>
+          <div class="card card--step">
+            <div class="stepnum">02</div>
+            <h3>Import</h3>
+            <p class="muted">Load <code>.xml</code> or <code>.xml.gz</code> into HXSE Toolkit.</p>
+          </div>
+          <div class="card card--step">
+            <div class="stepnum">03</div>
+            <h3>Queue → Export</h3>
+            <p class="muted">Changes are queued until you export a patched file.</p>
+          </div>
+        </div>
+
+        <div class="grid grid--2" style="margin-top:16px;">
+          <div class="card">
+            <h3>Recipe format (recommended)</h3>
+            <p class="muted">Every SaveStation save should ship with a matching recipe file.</p>
+            <div class="code">
+              <div class="code__label">Example: SS-X4-001.recipe.txt</div>
+              <pre><code># Trader Kickstart (example)
+SetCredits 5000000
+SetRep TEL +10
+# AddInventoryItem ...</code></pre>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Keep it repeatable</h3>
+            <p class="muted">
+              The fastest way to grow is shareable “recipes” people can paste and reuse.
+              It turns your editor into a community standard.
+            </p>
+            <div class="actions">
+              <!-- TODO -->
+              <a class="btn btn--ghost" href="https://example.com/docs" target="_blank" rel="noreferrer">Docs / Commands</a>
+              <a class="btn btn--ghost" href="https://example.com/requests" target="_blank" rel="noreferrer">Request a save</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__head">
+          <h2>What you can do</h2>
+          <p>Keep this list honest. Better fewer claims than sketchy ones.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card"><h3>Credits</h3><p class="muted">Set / add / subtract credits with a preview.</p></div>
+          <div class="card"><h3>Reputation</h3><p class="muted">Adjust faction rep and licences.</p></div>
+          <div class="card"><h3>Inventory</h3><p class="muted">Add / set inventory items and quantities.</p></div>
+          <div class="card"><h3>Blueprints</h3><p class="muted">Unlock all or selected blueprint groups.</p></div>
+          <div class="card"><h3>Skills</h3><p class="muted">Bulk edit crew/officer skills.</p></div>
+          <div class="card"><h3>Ships / Stations</h3><p class="muted">Rename, ownership tweaks, and other edits.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAVESTATION -->
+    <section class="section" id="savestation">
+      <div class="container">
+        <div class="section__head">
+          <h2>SaveStation library</h2>
+          <p>Example saves + matching recipes. This is your “traction engine”.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card card--save">
+            <div class="save__top">
+              <span class="badge">SS-X4-001</span>
+              <span class="badge badge--ghost">Starter</span>
+            </div>
+            <h3>Trader Kickstart</h3>
+            <p class="muted">Vanilla • Version x.xx • Early economy start</p>
+            <div class="actions">
+              <a class="btn btn--ghost btn--full" href="https://example.com/save1" target="_blank" rel="noreferrer">Download save</a>
+              <a class="btn btn--ghost btn--full" href="https://example.com/recipe1" target="_blank" rel="noreferrer">Recipe</a>
+            </div>
+          </div>
+
+          <div class="card card--save">
+            <div class="save__top">
+              <span class="badge">SS-X4-002</span>
+              <span class="badge badge--ghost">Checkpoint</span>
+            </div>
+            <h3>Builder Midgame</h3>
+            <p class="muted">Vanilla • Version x.xx • Stations + logistics</p>
+            <div class="actions">
+              <a class="btn btn--ghost btn--full" href="https://example.com/save2" target="_blank" rel="noreferrer">Download save</a>
+              <a class="btn btn--ghost btn--full" href="https://example.com/recipe2" target="_blank" rel="noreferrer">Recipe</a>
+            </div>
+          </div>
+
+          <div class="card card--save">
+            <div class="save__top">
+              <span class="badge">SS-X4-003</span>
+              <span class="badge badge--ghost">Scenario</span>
+            </div>
+            <h3>Pirate Sandbox</h3>
+            <p class="muted">Modded • Version x.xx • “Start spicy” setup</p>
+            <div class="actions">
+              <a class="btn btn--ghost btn--full" href="https://example.com/save3" target="_blank" rel="noreferrer">Download save</a>
+              <a class="btn btn--ghost btn--full" href="https://example.com/recipe3" target="_blank" rel="noreferrer">Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="section" id="trust">
+      <div class="container">
+        <div class="section__head">
+          <h2>Safety</h2>
+          <p>This section is what stops people bouncing.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>How HXSE works</h3>
+            <ul class="bullets">
+              <li>Edits are queued until export (non-destructive workflow).</li>
+              <li>Export to a new file — keep an untouched original.</li>
+              <li>Post checksums and mirrors so people trust the download.</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Example “recipe” idea</h3>
-            <p class="small">If you publish command recipes, link them next to saves.</p>
-            <div class="codebox"><code>
-SS-X4-001 — Trader Kickstart
-- SetCredits: 5,000,000
-- SetRep: TEL +10
-- AddInventoryItem: (example)
-            </code></div>
+            <h3>Disclaimer</h3>
+            <p class="muted">
+              Community tool. Not affiliated with Egosoft. Use at your own risk.
+              If a patch breaks saves, keep a copy of the original and try older versions.
+            </p>
+            <div class="actions">
+              <!-- TODO -->
+              <a class="btn btn--ghost" href="https://example.com/issues" target="_blank" rel="noreferrer">Report a bug</a>
+              <a class="btn btn--ghost" href="https://example.com/discord" target="_blank" rel="noreferrer">Discord</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="features" class="section">
-      <div class="wrap">
-        <h2>Features</h2>
-        <div class="grid3">
-          <div class="card"><h3>Credits</h3><p>Set/Add/Subtract credits with preview. :contentReference[oaicite:4]{index=4}</p></div>
-          <div class="card"><h3>Blueprints</h3><p>Unlock all or by category. :contentReference[oaicite:5]{index=5}</p></div>
-          <div class="card"><h3>Inventory</h3><p>Add or set inventory items safely. :contentReference[oaicite:6]{index=6}</p></div>
-          <div class="card"><h3>Factions</h3><p>Edit relations and licences, with safe modes. :contentReference[oaicite:7]{index=7}</p></div>
-          <div class="card"><h3>Skills</h3><p>Edit NPC/agent skills + bulk updates. :contentReference[oaicite:8]{index=8}</p></div>
-          <div class="card"><h3>Ships/Stations</h3><p>Rename, ownership changes, crew/officer skills, part mods. :contentReference[oaicite:9]{index=9}</p></div>
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Short, direct answers. No fluff.</p>
         </div>
-      </div>
-    </section>
 
-    <section id="trust" class="section">
-      <div class="wrap">
-        <h2>Safety / Trust</h2>
-        <div class="card">
-          <ul class="clean">
-            <li><strong>Offline desktop app:</strong> edits are applied on export. :contentReference[oaicite:10]{index=10}</li>
-            <li><strong>Backups:</strong> exporting can create a backup file (optional). :contentReference[oaicite:11]{index=11}</li>
-            <li><strong>Import formats:</strong> supports gz + non-gz saves. :contentReference[oaicite:12]{index=12}</li>
-            <li><strong>Export format:</strong> exports plain <code>.xml</code>. :contentReference[oaicite:13]{index=13}</li>
-          </ul>
-          <p class="small">Always keep an untouched original save outside the app workflow. :contentReference[oaicite:14]{index=14}</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="section">
-      <div class="wrap">
-        <h2>FAQ</h2>
         <div class="card">
           <details>
-            <summary>Is it free?</summary>
-            <p>Yes — HXSE Toolkit is free.</p>
+            <summary>Is HXSE Toolkit free?</summary>
+            <p>Yes.</p>
           </details>
           <details>
-            <summary>What saves does it support?</summary>
-            <p>It imports <code>.xml</code> and <code>.xml.gz</code> saves. :contentReference[oaicite:15]{index=15}</p>
+            <summary>What save formats are supported?</summary>
+            <p><code>.xml</code> and <code>.xml.gz</code> imports, export as <code>.xml</code>.</p>
           </details>
           <details>
-            <summary>Does it write changes instantly?</summary>
-            <p>No — changes are queued until you export a patched file. :contentReference[oaicite:16]{index=16}</p>
+            <summary>Can I break my save?</summary>
+            <p>Yes — that’s why you always keep an untouched backup and export to a new file.</p>
           </details>
           <details>
-            <summary>Is this affiliated with Egosoft?</summary>
-            <p>No, it’s a community tool.</p>
+            <summary>Why “SaveStation”?</summary>
+            <p>It’s the public hub: example saves, recipes, install help. HXSE Toolkit is the editor.</p>
           </details>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="wrap footer-inner">
-        <div>
-          <strong>SaveStation</strong><br/>
-          <span class="small">Not affiliated with Egosoft. Use at your own risk; back up saves.</span>
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="brand brand--small">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span class="brand__text">SaveStation</span>
+          </div>
+          <p class="micro">Not affiliated with Egosoft. Back up saves before editing.</p>
         </div>
-        <div class="footer-links">
-          <a href="#download">Download</a>
-          <a href="#quickstart">Quick Start</a>
-          <a href="#trust">Safety</a>
+
+        <div class="footer__right">
+          <a class="link" href="#download">Download</a>
+          <a class="link" href="#quickstart">Quick Start</a>
+          <a class="link" href="#trust">Safety</a>
+          <a class="link" href="#top">Back to top</a>
         </div>
       </div>
     </footer>
   </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
